@@ -1,0 +1,20 @@
+
+eclipse khusus java jadi dapat menjalankan source banyak
+vscode bahasanya lebih universal jadi jika load dource banyak akan berat
+
+eclipse marketplace
+extention vscode 
+spring boot tools
+jpa
+java
+code runner
+
+java environtment java 8 dan 17
+
+database app
+postgre
+mysqll
+heroku
+exampp
+mongodb
+
