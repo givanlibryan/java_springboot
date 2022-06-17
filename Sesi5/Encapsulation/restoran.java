@@ -1,3 +1,5 @@
+package Encapsulation;
+
 public class restoran {
     // variabel (private)
     private String menu;

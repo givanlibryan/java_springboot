@@ -1,3 +1,4 @@
+package Encapsulation;
 
 public class makanan {
     public static void main(String[] args) {
