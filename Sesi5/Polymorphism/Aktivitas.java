@@ -1,3 +1,5 @@
+package Polymorphism;
+
 public class Aktivitas {
 
     public String namaAnak = "Budi";

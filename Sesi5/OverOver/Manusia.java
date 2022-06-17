@@ -1,3 +1,5 @@
+package OverOver;
+
 abstract class Manusia {
     // deklarasi class dan method tipe abstract
     protected abstract void nyanyiLagu();
