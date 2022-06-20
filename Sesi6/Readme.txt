@@ -55,7 +55,7 @@ git checkout -b master
 3. cara menggunakan git
 ---
 git init
-git remote add origin url
+git remote add origin "https://github.com/givanlibryan/java_springboot"
 git add README.md
 git commit -m "first commit"
 git checkout -b main
