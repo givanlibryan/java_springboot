@@ -1,0 +1,150 @@
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+CREATE TABLE `tb_dependent` (
+  `ESSN` int(11) NOT NULL,
+  `Dependent_Name` varchar(50) NOT NULL,
+  `Sex` enum('"Laki-laki"','"Perempuan') NOT NULL,
+  `BDate` date NOT NULL,
+  `Relationship` enum('"Staff"','"Manager"') NOT NULL,
+  KEY `ESSN` (`ESSN`),
+  CONSTRAINT `tb_dependent_ibfk_1` FOREIGN KEY (`ESSN`) REFERENCES `tb_employee` (`SSN`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_dependent` (`ESSN`, `Dependent_Name`, `Sex`, `BDate`, `Relationship`) VALUES
+(101,	'Budi',	'\"Laki-laki\"',	'1996-10-23',	'\"Staff\"'),
+(101,	'Gandi',	'\"Laki-laki\"',	'1998-04-21',	'\"Staff\"'),
+(102,	'Mita',	'\"Perempuan',	'1993-10-30',	'\"Manager\"'),
+(102,	'Rei',	'\"Laki-laki\"',	'1997-05-13',	'\"Staff\"'),
+(102,	'Meita',	'\"Perempuan',	'1998-05-19',	'\"Manager\"'),
+(103,	'Sani',	'\"Laki-laki\"',	'1994-11-08',	'\"Staff\"'),
+(104,	'Kino',	'\"Laki-laki\"',	'1997-04-17',	'\"Staff\"'),
+(104,	'Marsel',	'\"Laki-laki\"',	'1995-11-19',	'\"Staff\"'),
+(107,	'Nila',	'\"Perempuan',	'1993-08-27',	'\"Manager\"'),
+(107,	'Laila',	'\"Perempuan',	'1998-09-14',	'\"Staff\"'),
+(107,	'Opi',	'\"Laki-laki\"',	'1994-03-25',	'\"Manager\"'),
+(110,	'Gilang',	'\"Laki-laki\"',	'1996-12-16',	'\"Staff\"'),
+(110,	'Sandi',	'\"Laki-laki\"',	'1999-06-04',	'\"Staff\"'),
+(110,	'Seila',	'\"Perempuan',	'1996-05-19',	'\"Manager\"'),
+(110,	'Doni',	'\"Laki-laki\"',	'1995-12-22',	'\"Staff\"');
+
+CREATE TABLE `tb_dept` (
+  `DNum` int(11) NOT NULL AUTO_INCREMENT,
+  `DName` varchar(50) NOT NULL,
+  `MgrSSN` int(11) NOT NULL,
+  `MgrStartDate` date NOT NULL,
+  PRIMARY KEY (`DNum`),
+  KEY `MgrSSN` (`MgrSSN`),
+  CONSTRAINT `tb_dept_ibfk_2` FOREIGN KEY (`MgrSSN`) REFERENCES `tb_employee` (`SSN`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_dept` (`DNum`, `DName`, `MgrSSN`, `MgrStartDate`) VALUES
+(201,	'IT',	104,	'2003-12-21'),
+(202,	'R&D',	104,	'2001-11-09'),
+(203,	'HRD',	103,	'2009-03-16'),
+(204,	'Environment',	107,	'2003-03-04'),
+(205,	'Operation',	110,	'2005-03-29'),
+(206,	'Public Relation',	107,	'2004-12-11'),
+(207,	'Goverment Relation',	103,	'2010-06-26'),
+(208,	'Property Handler',	102,	'2001-03-17'),
+(209,	'Quality Assurance',	102,	'2002-08-14'),
+(210,	'Warehouse',	101,	'2005-11-07');
+
+CREATE TABLE `tb_dept_location` (
+  `DNum` int(11) NOT NULL,
+  `DLocation` varchar(50) NOT NULL,
+  KEY `DNum` (`DNum`),
+  CONSTRAINT `tb_dept_location_ibfk_2` FOREIGN KEY (`DNum`) REFERENCES `tb_dept` (`DNum`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_dept_location` (`DNum`, `DLocation`) VALUES
+(201,	'Solo'),
+(202,	'Bandung'),
+(201,	'Surabaya'),
+(203,	'Lumajang'),
+(204,	'Surabaya'),
+(204,	'Lampung'),
+(202,	'Makassar'),
+(205,	'Bali'),
+(203,	'Palu'),
+(205,	'Samarinda');
+
+CREATE TABLE `tb_employee` (
+  `SSN` int(11) NOT NULL AUTO_INCREMENT,
+  `FName` varchar(50) NOT NULL,
+  `MName` varchar(50) NOT NULL,
+  `LName` varchar(50) NOT NULL,
+  `BDate` date NOT NULL,
+  `Address` text NOT NULL,
+  `Sex` enum('"Laki-laki"','"Perempuan"') NOT NULL,
+  `Salary` int(11) NOT NULL,
+  `DNum` int(11) NOT NULL,
+  PRIMARY KEY (`SSN`),
+  KEY `DNum` (`DNum`),
+  CONSTRAINT `tb_employee_ibfk_1` FOREIGN KEY (`DNum`) REFERENCES `tb_dept` (`DNum`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_employee` (`SSN`, `FName`, `MName`, `LName`, `BDate`, `Address`, `Sex`, `Salary`, `DNum`) VALUES
+(101,	'Mila',	'V',	'S',	'1997-02-23',	'Bogor',	'\"Perempuan\"',	10000000,	204),
+(102,	'Toni',	'J',	'B',	'1997-03-22',	'Bekasi',	'\"Laki-laki\"',	9000000,	205),
+(103,	'Eli',	'N',	'L',	'1993-02-19',	'Serpong',	'\"Perempuan\"',	7500000,	205),
+(104,	'Beni',	'G',	'F',	'1994-10-27',	'Jakarta',	'\"Laki-laki\"',	11000000,	204),
+(105,	'Kino',	'C',	'A',	'1995-12-13',	'Bandung',	'\"Laki-laki\"',	10500000,	201),
+(106,	'Weni',	'D',	'J',	'1994-09-21',	'Bogor',	'\"Perempuan\"',	9500000,	202),
+(107,	'Erna',	'D',	'Z',	'1993-05-02',	'Bekasi',	'\"Perempuan\"',	13000000,	204),
+(108,	'Vin',	'S',	'B',	'1997-03-01',	'Solo',	'\"Laki-laki\"',	8000000,	201),
+(109,	'Sam',	'W',	'P',	'1998-11-21',	'Meruya',	'\"Laki-laki\"',	7000000,	202),
+(110,	'Rino',	'M',	'T',	'1996-12-26',	'Jakarta',	'\"Laki-laki\"',	10000000,	203);
+
+CREATE TABLE `tb_project` (
+  `Pnumber` int(11) NOT NULL AUTO_INCREMENT,
+  `PName` varchar(50) NOT NULL,
+  `PLocation` varchar(50) NOT NULL,
+  `DNum` int(11) NOT NULL,
+  PRIMARY KEY (`Pnumber`),
+  KEY `DNum` (`DNum`),
+  CONSTRAINT `tb_project_ibfk_1` FOREIGN KEY (`DNum`) REFERENCES `tb_dept` (`DNum`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_project` (`Pnumber`, `PName`, `PLocation`, `DNum`) VALUES
+(301,	'Maintenance Gedung',	'Bandung',	201),
+(302,	'Hotel',	'Mataram',	201),
+(303,	'Restoran',	'Gorontalo',	202),
+(304,	'Pembangunan Rumah',	'Bangka',	202),
+(305,	'Pembangunan Kantor',	'Solo',	203),
+(306,	'Jual Beli Tanah',	'Yogyakarta',	203),
+(307,	'Pembangunan Rumah',	'Banten',	204),
+(308,	'Investasi',	'Pontianak',	204),
+(309,	'Jual Beli Tanah',	'Papua',	205),
+(310,	'Investasi',	'Aceh',	205);
+
+CREATE TABLE `tb_works_on` (
+  `ESSN` int(11) NOT NULL,
+  `Pnumber` int(11) NOT NULL,
+  `Hours` int(11) NOT NULL,
+  KEY `ESSN` (`ESSN`),
+  KEY `Pnumber` (`Pnumber`),
+  CONSTRAINT `tb_works_on_ibfk_1` FOREIGN KEY (`ESSN`) REFERENCES `tb_employee` (`SSN`),
+  CONSTRAINT `tb_works_on_ibfk_2` FOREIGN KEY (`Pnumber`) REFERENCES `tb_project` (`Pnumber`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_works_on` (`ESSN`, `Pnumber`, `Hours`) VALUES
+(101,	302,	450),
+(101,	301,	220),
+(102,	301,	800),
+(103,	303,	1000),
+(104,	301,	200),
+(105,	305,	450),
+(105,	306,	1000),
+(106,	303,	300),
+(107,	304,	420),
+(108,	301,	500),
+(109,	303,	470),
+(109,	304,	346),
+(110,	306,	630),
+(111,	305,	300),
+(111,	306,	205);

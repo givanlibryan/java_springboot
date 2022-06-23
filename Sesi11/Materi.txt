@@ -1,0 +1,165 @@
+Database
+Kita mulai dari pengertian database.
+Database adalah salah satu komponen utama penyusun suatu aplikasi, fungsi umum dari database adalah untuk menyimpan data.
+
+Jenis Database
+Ada banyak sekali jenis database, tapi pada pemrograman ada dua jenis database yang paling sering dipakai, yaitu Relational Database dan Non-relational Database.
+
+Relational Database
+Pada relational database, data disimpan dalam sebuah skema yang ditampilkan seperi tabel (terdiri dari baris dan kolom).
+
+Setiap data pada relational database diidentifikasi menggunakan key atau primary key.
+
+Untuk memanipulasi data pada relational database digunakan sebuah bahasa yang disebut dengan Structured Query Language (SQL), oleh karena itu Relational Database juga disebut dengan SQL database.
+
+Contoh Relational Database:
+MySQL
+MariaDB
+PostgreSQL
+SQL Server
+Oracle
+
+Non-relational Database
+Non-relational database merupakan alternatif untuk relational database yang sering digunakan untuk menyimpan data dengan struktur yang tidak beraturan.
+
+Non-relational database juga biasa disebut dengan NoSQL database.
+
+Ada beberapa tipe non-relational database:
+
+Document Stores, data disimpan dalam bentuk JSON document. Contoh: MongoDB, Couchbase
+Key-value Stores, data disimpan dalam bentuk pasangan key-value. Contoh: Redis, Amazon DynamoDB
+Wide Column Stores, data disimpan dalam sebuah record yang bisa memiliki ribuan bahkan jutaan kolom. Contoh: Cassandra
+Graph Database, data disimpan dalam bentuk data struktur Graph. Contoh: Neo4j
+SQL vs NoSQL
+Sebelum membahas MongoDB kita akan bahas secara singkat perbedaan mendasar antara SQL dan NoSQL.
+
+Developer yang sudah terbiasa dengan konsep SQL database mungkin akan berusaha menerapkan konsep SQL ketika menggunakan NoSQL database.
+
+Padahal konsep keduanya sangat berbeda.
+
+Bentuk Data
+Kita mulai dari bentuk data.
+
+Pada SQL database seperti MySQL, sebuah data harus disimpan dalam bentuk tabel.
+Data tersusun rapi dan mudah dibaca.
+Sedangkan pada NoSQL database, data dapat disimpan dalam bentuk document, key-value, wide column atau graph.
+Data yang ditambahkan pada NoSQL database umumnya adalah data yang tidak terstruktur / beraturan.
+
+Read Operation
+Operasi membaca data / Read pada SQL database bisa dibilang operasi yang cukup murah dan mudah (resource yang digunakan untuk operasi read tidak terlalu besar), hal ini dikarenakan sejak dari awal data harus di normalisasi terlebih dahulu sebelum ditambahkan ke database.
+
+Yang dimaksud normalisasi adalah mengatur kolom pada tabel agar tidak terjadi data redundancy (duplikat data terjadi tanpa ada tujuan).
+
+Operasi Read pada MySQL bisa menjadi mahal jika harus melakukan operasi join banyak table.
+
+Kebalikan dari SQL, operasi Read pada NoSQL database bisa menjadi mahal karena bentuk data yang ditambahkan bisa jadi tidak beraturan dari awal.
+
+Untuk mendesain model data NoSQL database kita fokus pada query pattern dan bentuk data yang ingin didapatkan.
+
+Hal ini berbeda dengan SQL database dimana fokus tertuju pada struktur dan normalisasi data.
+
+Kita bisa menggunakan kata kunci berikut untuk mempermudah kita dalam mendesain model data pada database.
+
+Untuk SQL database, Dalam bentuk seperti apa data akan disimpan?.
+
+Untuk NoSQL database, Dalam bentuk seperti apa data akan dibaca?.
+
+Scalability
+Meningkatkan skalabilitas dari SQL database lebih mudah dilakukan secara vertical, yang berarti peningkatan kemampuan dari SQL database dilakukan dengan cara meningkatkan spesifikasi mesin atau server.
+
+Sedangkan skalabilitas dari NoSQL database lebih mudah dilakukan secara horizontal, yang dilakukan dengan cara menambah jumlah dari mesin atau server.
+
+Setelah mengetahui perbandingan antara SQL dan NoSQL kita akan bahas salah satu NoSQL database yang paling populer saat ini yaitu MongoDB.
+
+=> Install MongoDB
+MongoDB dapat diinstall di hampir semua Operating System
+
+Jenis MongoDB server yang dapat digunakan secara gratis adalah MongoDB Community Server.
+
+JSON vs BSON
+MongoDB menyimpan data dalam bentuk BSON document, lalu apa itu BSON dan adakah hubungannya dengan JSON?
+
+JSON adalah singkatan dari JavaScript Object Notation, JSON menjadi salah satu format data yang paling banyak digunakan untuk transfer data antara browser dan server.
+
+Pada dasarnya JSON hanya sebuah text yang memiliki format/syntax sebagai berikut:
+
+{
+ "key" : "value"
+}
+Sedangkan BSON adalah singkatan dari Binary JSON, BSON memiliki beberapa keunggulan dibandingkan dengan JSON diantaranya tingkat parsing yang lebih cepat dan mendukung lebih banyak tipe data native seperti dates dan binary data.
+
+Table vs Collection
+Pada SQL database seperti MySQL, sebuah database adalah gabungan dari satu atau banyak tabel.
+
+Sedangkan pada MongoDB, sebuah database adalah gabungan dari satu atau banyak collection.
+
+Yang perlu diperhatikan disini adalah kita bisa menyimpan data ke dalam collection dengan bentuk yang tidak terstruktur / beraturan berbeda dengan table pada MySQL.
+
+Operasi Dasar MongoDB
+Operasi dasar pada MongoDB mirip dengan operasi dasar pada SQL database pada umumnya.
+
+Untuk dapat berinteraksi dengan MongoDB server kita bisa gunakan MongoDB shell.
+
+Buka terminal dan eksekusi perintah berikut:
+
+$ mongo
+Membuat Database
+Perintah yang digunakan untuk membuat database:
+
+use DATABASE_NAME
+Perintah diatas akan membuat sebuah database baru jika tidak ditemukan database dengan nama yang sama di server.
+
+Jika sudah ada database dengan nama yang sama, maka perintah tersebut akan menampilkan database yang sudah ada.
+
+Untuk melihat database yang sudah ada kita gunakan perintah
+
+show dbs
+2. Membuat Collection
+
+Perintah atau method yang digunakan untuk membuat collection:
+
+db.createCollection(name, options)
+options disini adalah parameter yang bisa kita tambahkan dalam membuat sebuah collection dan bersifat optional.
+
+Operasi CRUD
+Operasi CRUD (Create, Read, Update, Delete ) adalah operasi dasar di dunia database / storage.
+
+3. Create
+
+Create berarti menambahkan data(selanjutnya kita sebut document) ke dalam collection.
+
+MongoDB menyediakan dua metode untuk menambahkan document, yaitu:
+
+db.collection.insertOne(), untuk menambahkan document tunggal/single
+db.collection.insertMany(), untuk menambahkan banyak document
+Contoh menambahkan dokumen tunggal
+
+Setiap document yang berhasil ditambahkan ke dalam database, MongoDB secara otomatis akan membuat sebuah id untuk document tersebut.
+
+id ini memiliki fungsi untuk membedakan antara satu document dengan document yang lainnya, mirip dengan primary key pada SQL table.
+
+
+4. Read
+
+Read adalah membaca document yang ada di dalam MongoDB database.
+
+Perintah atau method yang digunakan adalah:
+
+db.collection.find()
+
+5. Update
+
+Untuk memperbaharui sebuah document kita gunakan method berikut:
+
+db.collection.updateOne(filter, update) , ubah satu document
+db.collection.updateMany(filter, update), ubah banyak document sekaligus sesuai filter
+db.collection.replaceOne(filter, update), ganti satu document dengan document yang baru sesuai filter
+
+
+6. Delete
+
+Ada 2 method yang dapat digunakan untuk menghapus document.
+
+db.collection.deleteOne(filter), hapus satu document
+db.collection.deleteMany(filter), hapus banyak document sekaligus sesuai filter
+

@@ -1,0 +1,104 @@
+-- Adminer 4.8.1 MySQL 5.5.5-10.4.24-MariaDB dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+SET NAMES utf8mb4;
+
+DROP TABLE IF EXISTS `tb_album`;
+CREATE TABLE `tb_album` (
+  `id_album` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `tanggalCopyright` varchar(20) NOT NULL,
+  `format` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_album`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_album` (`id_album`, `tanggalCopyright`, `format`) VALUES
+(1,	'12 agustus 2002',	'cd'),
+(2,	'14 juli 2003',	'cd'),
+(3,	'30 agustus 2001',	'dvd'),
+(4,	'20 Februari 2004',	'cd'),
+(5,	'30 September 2000',	'dvd'),
+(6,	'29 Maret 2008',	'cd'),
+(7,	'23 Juni 2013',	'dvd'),
+(8,	'12 Januari 2014',	'cd'),
+(9,	'30 November 2017',	'dvd'),
+(10,	'1 April 2005',	'cd');
+
+DROP TABLE IF EXISTS `tb_combine_musik`;
+CREATE TABLE `tb_combine_musik` (
+  `id_combine_musik` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `id_musisi` int(12) unsigned NOT NULL,
+  `id_instrumen` int(20) unsigned NOT NULL,
+  PRIMARY KEY (`id_combine_musik`),
+  KEY `id_musisi` (`id_musisi`),
+  KEY `id_instrumen` (`id_instrumen`),
+  CONSTRAINT `tb_combine_musik_ibfk_1` FOREIGN KEY (`id_musisi`) REFERENCES `tb_musisi` (`id_musisi`),
+  CONSTRAINT `tb_combine_musik_ibfk_2` FOREIGN KEY (`id_instrumen`) REFERENCES `tb_instrumen` (`id_instrumen`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+
+DROP TABLE IF EXISTS `tb_instrumen`;
+CREATE TABLE `tb_instrumen` (
+  `id_instrumen` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `nama_instrumen` varchar(20) NOT NULL,
+  `id_kunci` varchar(10) NOT NULL,
+  PRIMARY KEY (`id_instrumen`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_instrumen` (`id_instrumen`, `nama_instrumen`, `id_kunci`) VALUES
+(1,	'Gitar',	'C'),
+(2,	'Gendang',	'D'),
+(3,	'Suling',	'G'),
+(4,	'Terompet',	'C minor'),
+(5,	'Gitar',	'C'),
+(6,	'Biola',	'A'),
+(7,	'Sasando',	'B'),
+(8,	'Piano',	'D'),
+(9,	'Drum',	'B'),
+(10,	'Angklung',	'A');
+
+DROP TABLE IF EXISTS `tb_lagu`;
+CREATE TABLE `tb_lagu` (
+  `id_lagu` int(20) unsigned NOT NULL AUTO_INCREMENT,
+  `judul` varchar(20) NOT NULL,
+  `pengarang` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_lagu`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_lagu` (`id_lagu`, `judul`, `pengarang`) VALUES
+(1,	'lalala',	'orang punya'),
+(2,	'hehehe',	'orang ini'),
+(3,	'Pagi',	'Budis'),
+(4,	'Siang',	'Beni'),
+(5,	'Sore',	'Seli'),
+(6,	'Dunia',	'Sani'),
+(7,	'Awan',	'Nia'),
+(8,	'Mendung',	'Dila'),
+(9,	'Hujan',	'Mona'),
+(10,	'Lara',	'Kelly');
+
+DROP TABLE IF EXISTS `tb_musisi`;
+CREATE TABLE `tb_musisi` (
+  `id_musisi` int(12) unsigned NOT NULL,
+  `nama_musisi` varchar(50) NOT NULL,
+  `alamat_musisi` varchar(100) NOT NULL,
+  `no_telepon` varchar(20) NOT NULL,
+  PRIMARY KEY (`id_musisi`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+INSERT INTO `tb_musisi` (`id_musisi`, `nama_musisi`, `alamat_musisi`, `no_telepon`) VALUES
+(1,	'Givan',	'Jakarta',	'085339938588'),
+(2,	'Kusuma',	'Jakarta',	'085339938500'),
+(3,	'Edi',	'Bandung',	'083333333333'),
+(4,	'Budi',	'Bali',	'085139987567'),
+(5,	'Bambang',	'Surabaya',	'081386876456'),
+(6,	'Dani',	'Solo',	'082321453478'),
+(7,	'Deri',	'Bogor',	'081231896758'),
+(8,	'Lina',	'Jepara',	'085382758493'),
+(9,	'Tomi',	'Samarinda',	'081756352985'),
+(10,	'Tino',	'Lumajang',	'081376287637');
+
+-- 2022-06-21 06:52:28

@@ -1,0 +1,150 @@
+a) Tampilkan dependent_name dan relationship dengan employee yang namanya diawali huruf R ?
+
+SELECT emp.FName, dep.Dependent_Name, dep.Relationship 
+FROM tb_dependent dep 
+JOIN tb_employee emp
+ON emp.SSN = dep.ESSN
+WHERE emp.FName
+LIKE 'R%'
+
+b) Banyaknya employee yang mengerjakan project PNum = '301' ?
+
+SELECT COUNT(emp.SSN) 
+AS "Jumlah orang yang mengerjakan Project 101"
+FROM tb_employee emp
+JOIN tb_works_on work
+ON emp.SSN = work.ESSN
+WHERE work.PNumber = '301'
+
+c) Banyaknya employee yang memiliki salary lebih dari 8000000 ?
+
+SELECT COUNT(SSN)
+AS 'Karyawan yang memiliki salary lebih dari 8000000'
+FROM tb_employee
+WHERE salary > 8000000
+
+d) Banyaknya project yang dikerjakan DNum =2 ?
+
+SELECT COUNT(PNumber)
+AS 'Banyaknya project yang dikerjakan DNum = 201' 
+FROM tb_project pro
+JOIN tb_dept dept
+ON pro.DNum = dept.DNum
+WHERE pro.DNum = '201'
+
+e) Hitung total dan rata-rata salary dari setiap departemen ?
+
+SELECT dept.DName AS 'nama_departemen',
+AVG (emp.salary) AS 'rata_rata_gaji'
+FROM tb_employee emp
+JOIN tb_dept dept on dept.DNum = emp.DNum
+GROUP BY dept.DNum
+
+f) Banyaknya employee dari setiap department dan urutkan berdasarkan employee terbanyak ?
+
+SELECT dept.DName AS nama_departemen,
+COUNT(emp.SSN) AS banyak_karyawan
+FROM tb_employee emp
+JOIN tb_dept dept ON dept.DNum = emp.DNum
+GROUP BY dept.DNum
+ORDER BY banyak_karyawan DESC
+
+g) Total hours perweek dari semua employee untuk setiap project ?
+
+SELECT pro.PName AS nama_project,
+SUM(work.Hours) AS total_jam_perminggu
+FROM tb_works_on work
+JOIN tb_project pro ON work.PNumber = pro.PNumber
+GROUP BY work.PNumber
+
+h) Employee yang memiliki total hours perweek lebih besar dari 440 hours dan urutkan berdasarkan jumlah jam kerja terbanyak?
+
+SELECT emp.FName AS nama_karyawan,
+SUM(work.Hours) AS total_jam_perminggu
+FROM tb_employee emp
+JOIN tb_works_on work ON emp.SSN = work.ESSN
+GROUP BY work.ESSN
+HAVING total_jam_perminggu > 440
+ORDER BY total_jam_perminggu DESC
+
+i) Kelompokkan bonus employee berdasarkan jumlah jam kerjanya ? (Jika >= 200 hours, maka bonus = 50%; Jika >= 150 hours, maka bonus = 25%, Selainnya bonus = 10%)
+
+
+SELECT emp.FName AS nama_karyawan,
+SUM(work.Hours) AS total_jam,
+CASE 
+WHEN SUM(work.Hours) > 1000 THEN 'Bonus 50%'
+WHEN SUM(work.Hours) > 500 THEN 'Bonus 25%'
+ELSE 'Bonus 10%'
+END AS BONUS
+FROM tb_employee emp
+JOIN tb_works_on work ON emp.SSN = work.ESSN
+GROUP BY work.ESSN
+ORDER BY total_jam DESC
+
+j) Banyaknya project yang dikerjakan tiap employee dan urutkan dari yang terbanyak ?
+
+SELECT emp.FName AS nama_karyawan,
+COUNT(work.PNumber) AS jumlah_project
+FROM tb_employee emp
+JOIN tb_works_on work ON emp.SSN = work.ESSN
+GROUP BY emp.SSN
+ORDER BY jumlah_project DESC
+
+k) Employee yang bekerja pada 2 project ?
+
+SELECT emp.FName AS nama_karyawan,
+COUNT(work.PNumber) AS jumlah_project
+FROM tb_works_on work
+JOIN tb_employee emp ON emp.SSN = work.ESSN
+GROUP BY emp.SSN
+HAVING jumlah_project = 2
+
+l) Employee yang memiliki rata-rata hours perweek = 70 jam dan bekerja pada 2 project ? 
+
+SELECT emp.FName AS nama_karyawan,
+COUNT(work.PNumber) AS jumlah_project,
+AVG(Hours) AS rata_rata_jam_kerja
+FROM tb_employee emp
+JOIN tb_works_on work ON emp.SSN = work.ESSN
+GROUP BY emp.SSN
+HAVING jumlah_project = 2 AND rata_rata_jam_kerja > 300
+
+m) Banyaknya Dependent berdasarkan relationship dengan employee ?
+
+SELECT dep.Relationship,
+COUNT(dep.Relationship) AS jumlah_dependent
+FROM tb_employee emp
+JOIN tb_dependent dep ON emp.SSN = dep.ESSN
+GROUP BY dep.Relationship
+
+n) Berapa lama Manager tiap Department sudah menjabat ?
+
+SELECT emp.FName AS nama_manager,
+dept.DName AS departement,
+dept.MgrStartDate AS tgl_mulai,
+TIMESTAMPDIFF(month, dept.MgrStartDate, CURDATE()) AS lama_menjabat_bulan
+FROM tb_employee emp
+JOIN tb_dept dept on emp.SSN=dept.MgrSSN
+ORDER BY lama_menjabat_bulan desc
+
+o) Lokasi project yang menjadi tempat lebih dari satu department?
+
+SELECT pro.PLocation,
+COUNT(pro.PLocation) as jumlah_lokasi_project
+FROM tb_project pro
+GROUP BY pro.PLocation
+ORDER BY jumlah_lokasi_project DESC
+
+
+
+
+
+
+
+
+
+
+
+
+

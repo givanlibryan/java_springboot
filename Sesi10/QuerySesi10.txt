@@ -26,11 +26,10 @@ CREATE TABLE `tb_gaji` (
   CONSTRAINT `tb_gaji_ibfk_1` FOREIGN KEY (`id_pegawai`) REFERENCES `tb_pegawai` (`id_pegawai`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-TRUNCATE `tb_gaji`;
 INSERT INTO `tb_gaji` (`id_gaji`, `id_pegawai`, `gaji`, `tgl_gaji`) VALUES
-(1,	3,	8000000,	'2022-06-20'),
-(2,	1,	5000000,	'2022-06-20'),
-(3,	2,	3000000,	'2022-06-20');
+(1,	3,	3000000,	'2022-05-23'),
+(2,	1,	5000000,	'2022-03-25'),
+(3,	2,	4000000,	'2022-02-24');
 
 DROP TABLE IF EXISTS `tb_menu`;
 CREATE TABLE `tb_menu` (
@@ -41,11 +40,10 @@ CREATE TABLE `tb_menu` (
   PRIMARY KEY (`id_menu`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-TRUNCATE `tb_menu`;
 INSERT INTO `tb_menu` (`id_menu`, `nama_menu`, `jenis`, `harga`) VALUES
-(1,	'Gorengan',	'Gehu',	2000),
-(2,	'Gorengan',	'Bala-bala',	5000),
-(3,	'Jus',	'Alpukat',	10000);
+(1,	'Sate',	'Ayam',	20000),
+(2,	'Gulai',	'Kambing',	25000),
+(3,	'Tongseng',	'Sapi',	26000);
 
 DROP TABLE IF EXISTS `tb_pegawai`;
 CREATE TABLE `tb_pegawai` (
@@ -60,11 +58,10 @@ CREATE TABLE `tb_pegawai` (
   PRIMARY KEY (`id_pegawai`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-TRUNCATE `tb_pegawai`;
 INSERT INTO `tb_pegawai` (`id_pegawai`, `nama_pegawai`, `alamat`, `jenis_kelamin`, `tgl_lahir`, `status`, `no_tlp`, `jabatan`) VALUES
-(1,	'sanji',	'North Blue',	'Laki-laki',	'1992-10-14',	'Aktif',	'1234567891234',	'Staff'),
-(2,	'zoro',	'Bogor',	'Laki-laki',	'1992-04-13',	'Aktif',	'0857484875152',	'Staff'),
-(3,	'nami',	'desa jeruk',	'Perempuan',	'1989-01-02',	'Aktif',	'0258498715154',	'Supervisor');
+(1,	'Beni',	'Samarinda',	'Laki-laki',	'1994-11-24',	'Aktif',	'081345788327',	'Staff'),
+(2,	'Bambang',	'Bali',	'Laki-laki',	'1992-04-13',	'Aktif',	'085832875472',	'Staff'),
+(3,	'Mila',	'Lumajang',	'Perempuan',	'1989-01-02',	'Aktif',	'083984378823',	'Supervisor');
 
 DROP TABLE IF EXISTS `tb_pembeli`;
 CREATE TABLE `tb_pembeli` (
@@ -74,16 +71,15 @@ CREATE TABLE `tb_pembeli` (
   `jenis_kelamin` enum('Laki-laki','Perempuan') NOT NULL,
   `tgl_lahir` date NOT NULL,
   `status` enum('Aktif','Tidak Aktif') NOT NULL,
-  `no_hp` int(13) NOT NULL,
+  `no_hp` varchar(20) NOT NULL,
   `pekerjaan` varchar(50) NOT NULL,
   PRIMARY KEY (`id_pembeli`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-TRUNCATE `tb_pembeli`;
 INSERT INTO `tb_pembeli` (`id_pembeli`, `nama_pembeli`, `alamat`, `jenis_kelamin`, `tgl_lahir`, `status`, `no_hp`, `pekerjaan`) VALUES
-(1,	'Jinbe',	'Fishman Island',	'Laki-laki',	'1992-04-15',	'Aktif',	2147483647,	'Juru Kemudi'),
-(2,	'Usopp',	'Syrup Village',	'Laki-laki',	'1995-06-13',	'Aktif',	2147483647,	'Sniper'),
-(3,	'Robin Cwann',	'Ohara',	'Perempuan',	'1992-08-13',	'Aktif',	2147483647,	'Arkeolog');
+(1,	'Anang',	'Surabaya',	'Laki-laki',	'1992-05-25',	'Aktif',	'085378963746',	'Admin'),
+(2,	'Bela',	'Jakarta',	'Perempuan',	'1997-07-15',	'Aktif',	'081339876568',	'Programmer'),
+(3,	'Budi',	'Bogor',	'Laki-laki',	'1993-08-13',	'Aktif',	'085764839932',	'Tukang');
 
 DROP TABLE IF EXISTS `tb_transaksi`;
 CREATE TABLE `tb_transaksi` (
@@ -101,16 +97,15 @@ CREATE TABLE `tb_transaksi` (
   CONSTRAINT `tb_transaksi_ibfk_3` FOREIGN KEY (`id_pegawai`) REFERENCES `tb_pegawai` (`id_pegawai`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
-TRUNCATE `tb_transaksi`;
 INSERT INTO `tb_transaksi` (`id_transaksi`, `id_pembeli`, `id_menu`, `id_pegawai`, `tgl_transaksi`) VALUES
-(1,	1,	1,	1,	'2022-06-20'),
-(2,	2,	2,	2,	'2022-06-20'),
-(3,	3,	3,	3,	'0000-00-00');
+(1,	1,	1,	1,	'2022-04-10'),
+(2,	2,	2,	2,	'2021-08-10'),
+(3,	3,	3,	3,	'2019-10-07');
 
 DROP TABLE IF EXISTS `data_gaji`;
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `data_gaji` AS select `tp`.`id_pegawai` AS `id_pegawai`,`tp`.`nama_pegawai` AS `nama_pegawai`,`tp`.`jabatan` AS `jabatan`,`tg`.`gaji` AS `gaji`,`tg`.`tgl_gaji` AS `tgl_gaji` from (`tb_pegawai` `tp` join `tb_gaji` `tg` on(`tg`.`id_pegawai` = `tp`.`id_pegawai`)) order by `tp`.`id_pegawai`;
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `data_gaji` AS select `tp`.`id_pegawai` AS `id_pegawai`,`tp`.`nama_pegawai` AS `nama_pegawai`,`tp`.`jabatan` AS `jabatan`,`tg`.`gaji` AS `gaji`,`tg`.`tgl_gaji` AS `tgl_gaji` from (`tb_pegawai` `tp` join `tb_gaji` `tg` on(`tg`.`id_pegawai` = `tp`.`id_pegawai`)) order by `tp`.`id_pegawai`;
 
 DROP TABLE IF EXISTS `data_transaksi`;
-CREATE ALGORITHM=UNDEFINED SQL SECURITY DEFINER VIEW `data_transaksi` AS select `tr`.`id_transaksi` AS `id_transaksi`,`tpl`.`nama_pembeli` AS `nama_pembeli`,`tm`.`nama_menu` AS `nama_menu`,`tp`.`nama_pegawai` AS `nama_pegawai`,`tr`.`tgl_transaksi` AS `tgl_transaksi` from (((`tb_transaksi` `tr` join `tb_pembeli` `tpl` on(`tr`.`id_pembeli` = `tpl`.`id_pembeli`)) join `tb_menu` `tm` on(`tr`.`id_menu` = `tm`.`id_menu`)) join `tb_pegawai` `tp` on(`tr`.`id_pegawai` = `tp`.`id_pegawai`));
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `data_transaksi` AS select `tr`.`id_transaksi` AS `id_transaksi`,`tpl`.`nama_pembeli` AS `nama_pembeli`,`tm`.`nama_menu` AS `nama_menu`,`tp`.`nama_pegawai` AS `nama_pegawai`,`tr`.`tgl_transaksi` AS `tgl_transaksi` from (((`tb_transaksi` `tr` join `tb_pembeli` `tpl` on(`tr`.`id_pembeli` = `tpl`.`id_pembeli`)) join `tb_menu` `tm` on(`tr`.`id_menu` = `tm`.`id_menu`)) join `tb_pegawai` `tp` on(`tr`.`id_pegawai` = `tp`.`id_pegawai`));
 
--- 2022-06-20 07:51:45
+-- 2022-06-22 01:23:53

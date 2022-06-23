@@ -1,0 +1,4 @@
+127.0.0.1 - - [22/Jun/2022:16:59:48 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [22/Jun/2022:17:00:06 +0700] "GET /BelajarServlet/ HTTP/1.1" 200 1941
+0:0:0:0:0:0:0:1 - - [22/Jun/2022:17:00:29 +0700] "POST /BelajarServlet/doLogin HTTP/1.1" 200 1192
+0:0:0:0:0:0:0:1 - - [22/Jun/2022:17:00:36 +0700] "GET /BelajarServlet/HelloServlet HTTP/1.1" 200 50

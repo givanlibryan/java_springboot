@@ -1,0 +1,1 @@
+INDEX VERSION 1.4+C:\Users\095057\Documents\BTDP\Sesi14\Coba\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
