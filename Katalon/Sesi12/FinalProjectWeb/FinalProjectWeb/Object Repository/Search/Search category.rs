@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Search category</name>
+   <tag></tag>
+   <elementGuidId>0bd7f1eb-1669-4908-83a4-b750111d2c9a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//select[@id='header_search_category']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#header_search_category</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>cddea806-251c-412f-a94e-ddb42c2ba6a4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>search_category</value>
+      <webElementGuid>a795db6b-7908-43ff-93b0-70abaa79b59e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>header_search_category</value>
+      <webElementGuid>7510e6a0-a26a-4e8e-8e96-7badbc47d23e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>header_search_select</value>
+      <webElementGuid>4757a7fe-a658-4dd2-bb73-4ca327b98304</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+										Select CategoryUncategorizedCocoqua ココナッツDu-reamyドリアンHOME PAGEKOTAKOKI SETPIPILTIN COCOAREADY TO EATSEAFOODSPICESSTARTER SETスパイスブレンドテンペ新しいレシピセット</value>
+      <webElementGuid>87e41d60-f90b-4510-adbe-bf7add1daf82</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;header_search_category&quot;)</value>
+      <webElementGuid>53fae599-587f-469f-8a29-2f017e73e8a8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//select[@id='header_search_category']</value>
+      <webElementGuid>8a3e4721-c0bd-4e61-a03e-6514be2bc145</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Featured products'])[1]/preceding::select[1]</value>
+      <webElementGuid>0f829018-c153-4d95-8f22-734d8dead588</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Cap'])[1]/preceding::select[1]</value>
+      <webElementGuid>82acc4fe-5133-4e93-bfe7-308448125645</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>8ddf9aa4-2ffb-4a23-86c9-33a76d55b7e4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[@name = 'search_category' and @id = 'header_search_category' and (text() = '
+										Select CategoryUncategorizedCocoqua ココナッツDu-reamyドリアンHOME PAGEKOTAKOKI SETPIPILTIN COCOAREADY TO EATSEAFOODSPICESSTARTER SETスパイスブレンドテンペ新しいレシピセット' or . = '
+										Select CategoryUncategorizedCocoqua ココナッツDu-reamyドリアンHOME PAGEKOTAKOKI SETPIPILTIN COCOAREADY TO EATSEAFOODSPICESSTARTER SETスパイスブレンドテンペ新しいレシピセット')]</value>
+      <webElementGuid>f1648f71-4019-47a5-98b2-6adfd6f244ba</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

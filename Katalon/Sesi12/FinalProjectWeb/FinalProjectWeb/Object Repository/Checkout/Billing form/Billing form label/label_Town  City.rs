@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>label_Town  City</name>
+   <tag></tag>
+   <elementGuidId>08fc7f80-9ed6-432a-b61b-80de7b30df87</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//p[@id='billing_city_field']/label</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#billing_city_field > label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>label</value>
+      <webElementGuid>403f5feb-9b91-4ea4-942e-5f3873fd6b3f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>for</name>
+      <type>Main</type>
+      <value>billing_city</value>
+      <webElementGuid>d31300d9-47e2-46f3-8935-186b04e1b77f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Town / City *</value>
+      <webElementGuid>318e2998-46be-4f9d-9319-6d1cc397d3a0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;billing_city_field&quot;)/label[1]</value>
+      <webElementGuid>d2d7ceb1-d9bd-459e-9b05-478e9b331d4d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//p[@id='billing_city_field']/label</value>
+      <webElementGuid>89d0ab29-65c8-48ba-97f8-90da8089889f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='(optional)'])[2]/following::label[1]</value>
+      <webElementGuid>1654775d-2952-4a83-8658-0c60e4b1b183</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Town / City']/parent::*</value>
+      <webElementGuid>0ac592b0-c480-49f5-a103-ee9a06f52717</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//p[7]/label</value>
+      <webElementGuid>7360c5f2-f379-4a6a-9046-887e1dd9184e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//label[(text() = 'Town / City *' or . = 'Town / City *')]</value>
+      <webElementGuid>34f0c5fb-8d07-4446-b4ea-e9a346923558</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

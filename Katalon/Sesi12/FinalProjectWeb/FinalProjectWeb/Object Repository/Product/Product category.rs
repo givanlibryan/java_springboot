@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Product category</name>
+   <tag></tag>
+   <elementGuidId>ccef76f4-4913-4c65-a975-fff6c0ca2192</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='product-240']/div/div/div[2]/div/div[4]/span[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.posted_in</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;product-240&quot;)/div[@class=&quot;product_infos&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;small-12 large-5 columns&quot;]/div[@class=&quot;summary entry-summary&quot;]/div[@class=&quot;product_meta&quot;]/span[@class=&quot;posted_in&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>6a10e209-ee77-4ac5-acbd-698211c147c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>posted_in</value>
+      <webElementGuid>56ed7314-ded8-4855-a6ef-65f2e3f37d81</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Category: Uncategorized</value>
+      <webElementGuid>c2b37d29-e42b-4c5f-991a-1cad42500858</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;product-240&quot;)/div[@class=&quot;product_infos&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;small-12 large-5 columns&quot;]/div[@class=&quot;summary entry-summary&quot;]/div[@class=&quot;product_meta&quot;]/span[@class=&quot;posted_in&quot;]</value>
+      <webElementGuid>7f3bccb4-e4ac-4d48-ae15-0143c3445d02</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='product-240']/div/div/div[2]/div/div[4]/span[2]</value>
+      <webElementGuid>2ea4971b-d4fa-4b70-9979-d59ff0d79eab</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='woo-cap'])[1]/following::span[1]</value>
+      <webElementGuid>e51ff5bc-970c-455f-85fb-5d5846940bf1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Related products'])[1]/preceding::span[1]</value>
+      <webElementGuid>8c244bbc-2d59-451d-924e-0fbdbd02edd3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Category:']/parent::*</value>
+      <webElementGuid>5915872a-50df-4740-b4ec-18a646028229</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[4]/span[2]</value>
+      <webElementGuid>1502fab2-ba43-4ed3-b73a-7a32f72c6462</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Category: Uncategorized' or . = 'Category: Uncategorized')]</value>
+      <webElementGuid>1eadc27d-5318-40f4-89c9-150e1352141e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
