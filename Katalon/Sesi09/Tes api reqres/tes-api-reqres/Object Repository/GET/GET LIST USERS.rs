@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>GET</name>
+   <name>GET LIST USERS</name>
    <tag></tag>
    <elementGuidId>7168ce66-3851-4218-8c17-6a5ae6e68eeb</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>

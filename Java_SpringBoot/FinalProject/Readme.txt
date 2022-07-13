@@ -1,6 +1,7 @@
 ------------------------------------------
 Nama 			: Givan Kusuma Libryano
 Kode Peserta 	: JVSB001ONL002
+Link github		: https://github.com/givanlibryan/java_springboot/tree/main/Java_SpringBoot/FinalProject
 ------------------------------------------
 
 Final Project

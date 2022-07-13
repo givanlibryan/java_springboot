@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>GET - Albums with id</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c256c82e-7162-432a-98b8-c21645c36dfa</testCaseGuid>
+</TestCaseEntity>

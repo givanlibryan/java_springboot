@@ -1,0 +1,30 @@
+{
+  "keywordFileContentHash": "7FBF04F97C7C30B5FE9DE350B2A0DFBA",
+  "keywordClasses": [
+    {
+      "name": "tesPackage.loopXpath",
+      "keywordMethods": [
+        {
+          "name": "getTestObjectWithXpath",
+          "parameters": [
+            {
+              "name": "xpath",
+              "initialExpression": "",
+              "type": {
+                "fullClassName": "java.lang.String",
+                "unresolvedClassName": "String",
+                "isArray": false,
+                "isGnericsPlaceHolder": false,
+                "hasImmutableClassName": false,
+                "genericsTypes": [],
+                "errorOnParsing": false
+              }
+            }
+          ],
+          "javadoc": ""
+        }
+      ]
+    }
+  ],
+  "javadocParsed": true
+}
