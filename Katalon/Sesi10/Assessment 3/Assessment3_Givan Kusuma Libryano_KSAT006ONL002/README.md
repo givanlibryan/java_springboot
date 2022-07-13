@@ -2,7 +2,7 @@
 
 	- Nama 			: Givan Kusuma Libryano
 	- Kode Peserta 	: KSAT006ONL002
-	- Link Github	: https://github.com/givanlibryan/java_springboot/tree/main/Katalon/Sesi10/Assignment3/Assessment3_Givan%20Kusuma%20Libryano_KSAT006ONL002
+	- Link Github	: https://github.com/givanlibryan/java_springboot/tree/main/Katalon/Sesi10/Assessment%203
 
 ## Application features
 
