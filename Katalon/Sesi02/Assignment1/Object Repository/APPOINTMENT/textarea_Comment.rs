@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Username_username</name>
+   <name>textarea_Comment</name>
    <tag></tag>
-   <elementGuidId>a922db83-68b9-4455-9c13-fb67aa3e9a68</elementGuidId>
+   <elementGuidId>530ef5d7-d637-4710-b6e8-caf0b71c8b20</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='txt-username']</value>
+         <key>CSS</key>
+         <value>#txt_comment</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#txt-username</value>
+         <key>XPATH</key>
+         <value>//textarea[@id='txt_comment']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,16 +21,8 @@
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
-      <value>input</value>
-      <webElementGuid>45fa9761-b022-4bb7-8194-166a081b790b</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>type</name>
-      <type>Main</type>
-      <value>text</value>
-      <webElementGuid>0bdb374a-a350-444f-bbd8-d253dbada3ad</webElementGuid>
+      <value>textarea</value>
+      <webElementGuid>093a83fb-6666-4c25-99a3-8bdc9505a0c6</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,78 +30,78 @@
       <name>class</name>
       <type>Main</type>
       <value>form-control</value>
-      <webElementGuid>fc0766fb-f072-4696-9de7-1906c26cc6c5</webElementGuid>
+      <webElementGuid>88b78089-42c8-43da-8090-0b3cf30f2667</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>txt-username</value>
-      <webElementGuid>2ef364ea-8e0c-47c8-8727-817e54caa134</webElementGuid>
+      <value>txt_comment</value>
+      <webElementGuid>28a27b46-02b8-4154-83fe-c97f3c77a597</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>username</value>
-      <webElementGuid>929369b3-0362-49f0-ab8a-8d6d46b57187</webElementGuid>
+      <value>comment</value>
+      <webElementGuid>0addadd5-f600-4680-8344-0b3adf90c3cc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>placeholder</name>
       <type>Main</type>
-      <value>Username</value>
-      <webElementGuid>1588cb8e-54e5-4331-ba3b-a472ae531d68</webElementGuid>
+      <value>Comment</value>
+      <webElementGuid>e36e5103-eb7d-4c7a-b63d-681c24ff38ed</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
+      <name>rows</name>
       <type>Main</type>
-      <value>off</value>
-      <webElementGuid>0e1729fb-b6b2-4b45-b50c-4008c465dfcd</webElementGuid>
+      <value>10</value>
+      <webElementGuid>b7e4c474-851a-468e-948e-562dd357ef0d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;txt-username&quot;)</value>
-      <webElementGuid>9b079de8-3c52-4288-8843-309a9a59d9ca</webElementGuid>
+      <value>id(&quot;txt_comment&quot;)</value>
+      <webElementGuid>2d900d83-1adf-4679-9f17-78e20e398db4</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='txt-username']</value>
-      <webElementGuid>0a05725a-607b-4cd4-993f-28aaad7a41ff</webElementGuid>
+      <value>//textarea[@id='txt_comment']</value>
+      <webElementGuid>56b7eb48-e67a-493e-9e03-9376b98400ba</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//section[@id='login']/div/div/div[2]/form/div[2]/div/input</value>
-      <webElementGuid>0b6ba681-33f9-4809-bcc1-7d291512f813</webElementGuid>
+      <value>//section[@id='appointment']/div/div/form/div[5]/div/textarea</value>
+      <webElementGuid>bc5a7809-cad6-485f-996e-e317b84eb473</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div[2]/div/input</value>
-      <webElementGuid>169bb42b-31f6-4693-aaa8-35bc0f818666</webElementGuid>
+      <value>//textarea</value>
+      <webElementGuid>34ee2edf-f372-4a81-b19f-98f3108dd0dc</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @id = 'txt-username' and @name = 'username' and @placeholder = 'Username']</value>
-      <webElementGuid>8770e6ec-eb1c-4156-88b2-06bf99311205</webElementGuid>
+      <value>//textarea[@id = 'txt_comment' and @name = 'comment' and @placeholder = 'Comment']</value>
+      <webElementGuid>9ec07790-6221-4cf1-be94-4b70cedc9cb0</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

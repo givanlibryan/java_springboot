@@ -19,15 +19,15 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.url)
 
-WebUI.click(findTestObject('Object Repository/LOGIN/btn_Make Appointment'))
+WebUI.click(findTestObject('Object Repository/LOGIN/button_Make Appointment'))
 
 WebUI.setText(findTestObject('Object Repository/LOGIN/input_Username'), 'InvalidUser')
 
 WebUI.setText(findTestObject('Object Repository/LOGIN/input_Password'), 'InvalidPassword')
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
+WebUI.click(findTestObject('Object Repository/LOGIN/button_Login'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CURA Healthcare Service/txt_Make Appointment'), 0)
+WebUI.verifyElementPresent(findTestObject('LOGIN/p_Login failed'), 0)
 
 WebUI.closeBrowser()
 

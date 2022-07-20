@@ -6,12 +6,12 @@
    <elementGuidId>baae3dd9-b26c-41a4-82ef-e079866f75cd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//form[@action='https://katalon-demo-cura.herokuapp.com/appointment.php#summary']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>form.form-horizontal</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//form[@action='https://katalon-demo-cura.herokuapp.com/appointment.php#summary']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

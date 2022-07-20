@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>p_Please be informed that your appointment _11813a</name>
+   <name>p_Appointment booked</name>
    <tag></tag>
    <elementGuidId>2a4ecf7d-b79f-4a6b-838b-dd47e2f101c8</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//section[@id='summary']/div/div/div/p</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>p.lead</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//section[@id='summary']/div/div/div/p</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

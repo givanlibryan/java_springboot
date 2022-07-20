@@ -19,31 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.url)
 
-WebUI.click(findTestObject('LOGIN/button_Make Appointment'))
+WebUI.click(findTestObject('Object Repository/LOGIN/button_Make Appointment'))
 
-WebUI.setText(findTestObject('LOGIN/input_Username'), GlobalVariable.username)
+WebUI.setText(findTestObject('Object Repository/LOGIN/input_Username'), GlobalVariable.username)
 
-WebUI.setText(findTestObject('LOGIN/input_Password'), GlobalVariable.password)
+WebUI.setText(findTestObject('Object Repository/LOGIN/input_Password'), GlobalVariable.password)
 
-WebUI.sendKeys(findTestObject('LOGIN/input_Password'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Object Repository/LOGIN/button_Login'))
 
-WebUI.selectOptionByLabel(findTestObject('APPOINTMENT/select_Facility'), 'Tokyo CURA Healthcare Center', 
-    false)
+WebUI.click(findTestObject('APPOINTMENT/a_Menu-toggle'))
 
-WebUI.check(findTestObject('APPOINTMENT/input_Apply for hospital readmission'))
+WebUI.click(findTestObject('APPOINTMENT/a_Logout'))
 
-WebUI.check(findTestObject('Object Repository/APPOINTMENT/input_Medicare_programs'))
-
-WebUI.setText(findTestObject('Object Repository/APPOINTMENT/input_Visit Date'), '30/07/2022')
-
-WebUI.setText(findTestObject('Object Repository/APPOINTMENT/textarea_Comment'), 'Test Facility')
-
-WebUI.click(findTestObject('Object Repository/APPOINTMENT/button_Book Appointment'))
-
-WebUI.verifyElementPresent(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/p_Appointment booked'), 
-    0)
-
-WebUI.click(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/a_Go to Homepage'))
+WebUI.verifyElementPresent(findTestObject('LOGIN/button_Make Appointment'), 0)
 
 WebUI.closeBrowser()
 

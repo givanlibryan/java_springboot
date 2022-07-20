@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser(GlobalVariable.url)
 
-WebUI.click(findTestObject('LOGIN/btn_Make Appointment'))
+WebUI.click(findTestObject('LOGIN/button_Make Appointment'))
 
 WebUI.setText(findTestObject('LOGIN/input_Username'), GlobalVariable.username)
 
@@ -27,23 +27,23 @@ WebUI.setText(findTestObject('LOGIN/input_Password'), GlobalVariable.password)
 
 WebUI.sendKeys(findTestObject('LOGIN/input_Password'), Keys.chord(Keys.ENTER))
 
-WebUI.selectOptionByLabel(findTestObject('Page_CURA Healthcare Service/select_Facility'), 'Tokyo CURA Healthcare Center', 
+WebUI.selectOptionByLabel(findTestObject('APPOINTMENT/select_Facility'), 'Tokyo CURA Healthcare Center', 
     false)
 
-WebUI.check(findTestObject('Page_CURA Healthcare Service/input_Apply for hospital readmission'))
+WebUI.check(findTestObject('APPOINTMENT/input_Apply for hospital readmission'))
 
-WebUI.check(findTestObject('Page_CURA Healthcare Service/input_None_programs'))
+WebUI.check(findTestObject('APPOINTMENT/input_None_programs'))
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Visit Date'), '30/07/2022')
+WebUI.setText(findTestObject('Object Repository/APPOINTMENT/input_Visit Date'), '30/07/2022')
 
-WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/textarea_Comment_comment'), 'Test Facility')
+WebUI.setText(findTestObject('Object Repository/APPOINTMENT/textarea_Comment'), 'Test Facility')
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Book Appointment'))
+WebUI.click(findTestObject('Object Repository/APPOINTMENT/button_Book Appointment'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CURA Healthcare Service/p_Please be informed that your appointment _11813a'), 
+WebUI.verifyElementPresent(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/p_Appointment booked'), 
     0)
 
-WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Go to Homepage'))
+WebUI.click(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/a_Go to Homepage'))
 
 WebUI.closeBrowser()
 

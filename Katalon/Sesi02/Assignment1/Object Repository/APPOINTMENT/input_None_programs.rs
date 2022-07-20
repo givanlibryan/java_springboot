@@ -6,12 +6,12 @@
    <elementGuidId>10f64b62-0aec-4abf-b0ec-f0ac70b54469</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='radio_program_none']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#radio_program_none</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='radio_program_none']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

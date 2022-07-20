@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>input_Visit Date</name>
+   <name>input_Medicaid_programs</name>
    <tag></tag>
-   <elementGuidId>516e35e4-7188-47de-bc36-2824da61fb62</elementGuidId>
+   <elementGuidId>0b2bdcd5-60c7-4436-87ef-8b1c41eb4ae1</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='txt_visit_date']</value>
+         <key>CSS</key>
+         <value>#radio_program_medicaid</value>
       </entry>
       <entry>
-         <key>CSS</key>
-         <value>#txt_visit_date</value>
+         <key>XPATH</key>
+         <value>//input[@id='radio_program_medicaid']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,94 +22,78 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>2d3dd596-2ec0-4b1d-bad3-7601285c669d</webElementGuid>
+      <webElementGuid>1ca5c7ae-9f5a-4eb2-8953-0b69278646dc</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>28073cea-af01-43bb-8828-876574bec647</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>class</name>
-      <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>9eeb5edb-d0d7-4eaa-a194-5f5da9fb90e4</webElementGuid>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>id</name>
-      <type>Main</type>
-      <value>txt_visit_date</value>
-      <webElementGuid>3cbaecc8-e16d-46e0-a182-5515cae4b3d9</webElementGuid>
+      <value>radio</value>
+      <webElementGuid>98063720-2392-4592-a75d-6d2f82a8d1c5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
-      <value>visit_date</value>
-      <webElementGuid>7061d1cb-98cd-4eea-9670-df3fa004b0fa</webElementGuid>
+      <value>programs</value>
+      <webElementGuid>c3ce7ad8-56bd-44b6-aa44-3a0a7bfb5b52</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>placeholder</name>
+      <name>id</name>
       <type>Main</type>
-      <value>dd/mm/yyyy</value>
-      <webElementGuid>55431beb-da3d-4c4d-b815-86bd90a42e71</webElementGuid>
+      <value>radio_program_medicaid</value>
+      <webElementGuid>74f428db-a060-4abb-9c05-958e43eabbb2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>autocomplete</name>
+      <name>value</name>
       <type>Main</type>
-      <value>off</value>
-      <webElementGuid>f96a7351-6036-42f4-a113-a1d044433956</webElementGuid>
+      <value>Medicaid</value>
+      <webElementGuid>7fce8437-dc79-4723-ac40-aecc4984bd71</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>id(&quot;txt_visit_date&quot;)</value>
-      <webElementGuid>fb5121f5-6b32-473a-b38f-ddcb457e970b</webElementGuid>
+      <value>id(&quot;radio_program_medicaid&quot;)</value>
+      <webElementGuid>6613eb41-1568-4db2-b7f9-1933567e357c</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:attributes</name>
       <type>Main</type>
-      <value>//input[@id='txt_visit_date']</value>
-      <webElementGuid>584a9d52-dbf5-469b-8a8d-84b5330307df</webElementGuid>
+      <value>//input[@id='radio_program_medicaid']</value>
+      <webElementGuid>e7f481be-9dbd-4cf0-8598-86e7d8f0008f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:idRelative</name>
       <type>Main</type>
-      <value>//section[@id='appointment']/div/div/form/div[4]/div/div/input</value>
-      <webElementGuid>cbd9477d-8974-4b81-9c05-21727c121852</webElementGuid>
+      <value>//section[@id='appointment']/div/div/form/div[3]/div/label[2]/input</value>
+      <webElementGuid>ea870eca-abcc-47e8-9c92-8260d9b4dd23</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:position</name>
       <type>Main</type>
-      <value>//div/input</value>
-      <webElementGuid>4fe6d76f-d63f-43e1-ae3d-0b3605229f1e</webElementGuid>
+      <value>//label[2]/input</value>
+      <webElementGuid>bdbaaeed-071a-4c01-87cb-d98415c655f8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath:customAttributes</name>
       <type>Main</type>
-      <value>//input[@type = 'text' and @id = 'txt_visit_date' and @name = 'visit_date' and @placeholder = 'dd/mm/yyyy']</value>
-      <webElementGuid>21996866-00ae-4c1a-a449-72cbf487aa53</webElementGuid>
+      <value>//input[@type = 'radio' and @name = 'programs' and @id = 'radio_program_medicaid']</value>
+      <webElementGuid>705f398f-4792-4adb-8f94-d279f3140fa2</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

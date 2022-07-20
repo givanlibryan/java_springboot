@@ -27,8 +27,7 @@ WebUI.setText(findTestObject('LOGIN/input_Password'), GlobalVariable.password)
 
 WebUI.sendKeys(findTestObject('LOGIN/input_Password'), Keys.chord(Keys.ENTER))
 
-WebUI.selectOptionByLabel(findTestObject('APPOINTMENT/select_Facility'), 'Tokyo CURA Healthcare Center', 
-    false)
+WebUI.selectOptionByLabel(findTestObject('APPOINTMENT/select_Facility'), 'Tokyo CURA Healthcare Center', false)
 
 WebUI.check(findTestObject('APPOINTMENT/input_Apply for hospital readmission'))
 
@@ -36,14 +35,15 @@ WebUI.check(findTestObject('Object Repository/APPOINTMENT/input_Medicare_program
 
 WebUI.setText(findTestObject('Object Repository/APPOINTMENT/input_Visit Date'), '30/07/2022')
 
-WebUI.setText(findTestObject('Object Repository/APPOINTMENT/textarea_Comment'), 'Test Facility')
+WebUI.setText(findTestObject('Object Repository/APPOINTMENT/textarea_Comment'), 'Test Logout')
 
 WebUI.click(findTestObject('Object Repository/APPOINTMENT/button_Book Appointment'))
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/p_Appointment booked'), 
-    0)
+WebUI.click(findTestObject('APPOINTMENT/a_Menu-toggle'))
 
-WebUI.click(findTestObject('Object Repository/APPOINTMENT CONFIRMATION/a_Go to Homepage'))
+WebUI.click(findTestObject('APPOINTMENT/a_Logout'))
+
+WebUI.verifyElementPresent(findTestObject('LOGIN/button_Make Appointment'), 0)
 
 WebUI.closeBrowser()
 
