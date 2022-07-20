@@ -55,7 +55,7 @@ currentAcc = ((username + ' | ') + 'Kotakoki')
 
 WebUI.verifyMatch(currentUrl, currentAcc, false)
 
-WebUI.verifyElementText(findTestObject('MyAccount/h1_Chan aja'), username)
+WebUI.verifyElementText(findTestObject('MyAccount/h1'), username)
 
 WebUI.closeBrowser(FailureHandling.STOP_ON_FAILURE)
 

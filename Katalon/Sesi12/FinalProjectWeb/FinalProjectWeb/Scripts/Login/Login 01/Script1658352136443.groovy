@@ -55,5 +55,5 @@ WebUI.waitForElementClickable(findTestObject('MyAccount/Action button/span_Go to
 
 WebUI.click(findTestObject('MyAccount/Action button/span_Go to my account'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.verifyElementText(findTestObject('MyAccount/h1_Chan aja'), username)
+WebUI.verifyElementText(findTestObject('MyAccount/h1'), username)
 

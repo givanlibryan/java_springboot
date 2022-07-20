@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>h1_Chan aja</name>
+   <name>h1</name>
    <tag></tag>
    <elementGuidId>1ad9d292-a1c2-42a2-aea7-0cf4eeb0e279</elementGuidId>
    <selectorCollection>
