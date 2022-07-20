@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>strong_Newsletter</name>
+   <tag></tag>
+   <elementGuidId>82c17058-45d7-4093-9ba3-caa06fd15019</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>h3 > strong</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='text-5']/div/h3/strong</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;text-5&quot;)/div[@class=&quot;textwidget&quot;]/h3[1]/strong[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>strong</value>
+      <webElementGuid>2d7877b3-a81f-4b78-9097-725a13e2a0ae</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Newsletter
+</value>
+      <webElementGuid>ad53f53e-db67-4941-9beb-70ee06c03d67</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;text-5&quot;)/div[@class=&quot;textwidget&quot;]/h3[1]/strong[1]</value>
+      <webElementGuid>c03cb0fd-5ee8-45ed-8685-0b5bf061f685</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='text-5']/div/h3/strong</value>
+      <webElementGuid>f6d981ec-26c4-4b8c-b976-c1961f90b899</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to cart'])[7]/following::strong[1]</value>
+      <webElementGuid>df0239c8-e6ec-4531-86a9-aa79e616c5aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Quick View'])[7]/following::strong[1]</value>
+      <webElementGuid>331fd38b-a5e7-47c2-8359-68dca93514e3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='*'])[1]/preceding::strong[1]</value>
+      <webElementGuid>9924a7b5-fc6f-418c-9b1c-cf7686183d13</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Newsletter']/parent::*</value>
+      <webElementGuid>1966ecf1-4d16-4e7c-beb3-8896abac2cd2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//h3/strong</value>
+      <webElementGuid>983f6704-3095-4953-8e57-f0f23444e9ae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//strong[(text() = 'Newsletter
+' or . = 'Newsletter
+')]</value>
+      <webElementGuid>bede1a64-8508-4228-9830-6ce7925697f7</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

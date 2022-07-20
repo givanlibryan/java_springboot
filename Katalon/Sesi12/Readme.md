@@ -2,7 +2,9 @@
 
 	- Nama 		: Givan Kusuma Libryano
 	- Kode Peserta	: KSAT006ONL002
-	- Link github 	: https://github.com/givanlibryan/java_springboot/tree/main/Katalon/Sesi12
+	- Link Github API		: https://github.com/givanlibryan/FinalProjectAPI
+	- Link Github Mobile	: https://github.com/givanlibryan/FinalProjectMobile
+	- Link Github Web		: https://github.com/givanlibryan/FinalProjectWeb
 
 ## Testing API (reqres.in)
 

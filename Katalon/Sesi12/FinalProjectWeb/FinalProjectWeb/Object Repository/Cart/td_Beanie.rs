@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_Beanie</name>
+   <tag></tag>
+   <elementGuidId>7fc9800a-7f78-42b7-997d-62c9d592612a</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//article[@id='post-53']/div/div/form/table/tbody/tr/td[3]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;post-53&quot;)/div[@class=&quot;entry-content&quot;]/div[@class=&quot;woocommerce&quot;]/form[@class=&quot;woocommerce-cart-form&quot;]/table[@class=&quot;shop_table shop_table_responsive cart woocommerce-cart-form__contents&quot;]/tbody[1]/tr[@class=&quot;woocommerce-cart-form__cart-item cart_item&quot;]/td[@class=&quot;product-name&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td.product-name</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>fce05297-9e51-4adb-ab2e-705e1e6d4bc0</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>product-name</value>
+      <webElementGuid>c6803432-fa2a-4c63-b7b4-aa79c6e94b74</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-title</name>
+      <type>Main</type>
+      <value>Product</value>
+      <webElementGuid>f2b6fc08-a16e-45c4-8f0e-11f7f66c028f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+						Beanie						</value>
+      <webElementGuid>704a9894-bb3e-4d32-83aa-af3541a3c7af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;post-53&quot;)/div[@class=&quot;entry-content&quot;]/div[@class=&quot;woocommerce&quot;]/form[@class=&quot;woocommerce-cart-form&quot;]/table[@class=&quot;shop_table shop_table_responsive cart woocommerce-cart-form__contents&quot;]/tbody[1]/tr[@class=&quot;woocommerce-cart-form__cart-item cart_item&quot;]/td[@class=&quot;product-name&quot;]</value>
+      <webElementGuid>4ad53127-eec8-45b7-b539-dc9cb98d29e4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//article[@id='post-53']/div/div/form/table/tbody/tr/td[3]</value>
+      <webElementGuid>52342388-3019-4c0a-b35f-6bb965568f7b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='×'])[1]/following::td[2]</value>
+      <webElementGuid>1fc6b535-9a79-4ddb-bb90-9ce5d14aac68</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Subtotal'])[1]/following::td[3]</value>
+      <webElementGuid>4eb1bd11-00ae-4d23-ae89-766d9293cb5c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp'])[4]/preceding::td[1]</value>
+      <webElementGuid>d667a83b-b865-4c27-b13d-59808fe3c32a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]</value>
+      <webElementGuid>ddb96ae5-cd21-4b5a-9fd3-6acac687864f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = '
+						Beanie						' or . = '
+						Beanie						')]</value>
+      <webElementGuid>abd75c0b-0d75-4756-9388-312da48d27d1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

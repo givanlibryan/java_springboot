@@ -7,12 +7,12 @@
    <GlobalVariableEntity>
       <description></description>
       <initValue>'https://kotakoki.wijaysali.my.id/'</initValue>
-      <name>Website</name>
+      <name>WebsiteName</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
       <initValue>'http://kotakoki.wijaysali.my.id/my-account-2/'</initValue>
-      <name>AccountUrl</name>
+      <name>MyAccountUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

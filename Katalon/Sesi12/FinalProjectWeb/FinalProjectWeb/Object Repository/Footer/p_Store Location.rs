@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>p_Store Location</name>
+   <tag></tag>
+   <elementGuidId>9166dbca-7eb9-4862-a014-29a4453c5d94</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.rte > p</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//aside[@id='text-4']/div/div/p</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>id(&quot;text-4&quot;)/div[@class=&quot;textwidget&quot;]/div[@class=&quot;rte&quot;]/p[1]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>p</value>
+      <webElementGuid>5e460b73-c879-4443-9853-38c29522c97b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Store Location</value>
+      <webElementGuid>0021d79c-7a42-4b70-9041-1f8e565887c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;text-4&quot;)/div[@class=&quot;textwidget&quot;]/div[@class=&quot;rte&quot;]/p[1]</value>
+      <webElementGuid>056aa1ab-1df4-404f-b740-b31fe09dc8fe</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//aside[@id='text-4']/div/div/p</value>
+      <webElementGuid>ae867df9-7fe5-440e-a063-a3df32760c65</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='地図&amp;アクセス方法'])[1]/following::p[1]</value>
+      <webElementGuid>3291b72b-7eb7-43ed-a124-71636cda1060</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submit'])[1]/following::p[1]</value>
+      <webElementGuid>30d9b9af-89e2-4056-be58-06137561d73c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='お問い合わせ'])[1]/preceding::p[1]</value>
+      <webElementGuid>83dde85b-d71b-415e-9eb8-715152cb8c41</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Copyright © 2022. Powered by WS Lab'])[1]/preceding::p[5]</value>
+      <webElementGuid>511f43cb-769a-49d2-bb27-0798742c40c3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Store Location']/parent::*</value>
+      <webElementGuid>3efc2a65-a850-4e8c-b8f3-4a63169e6423</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//aside/div/div/p</value>
+      <webElementGuid>5908a999-307b-45d6-9726-864f78df5ce0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//p[(text() = 'Store Location' or . = 'Store Location')]</value>
+      <webElementGuid>db1b2140-d7cd-45fa-bcf2-8978dbf4a5c3</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

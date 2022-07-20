@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Thanks for joining our email list</name>
+   <tag></tag>
+   <elementGuidId>5f257746-ceef-4ac3-a46e-2eb3aca2142f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='wpforms-confirmation-291']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#wpforms-confirmation-291</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>4a392946-5ad9-44e0-890e-7f53e9eede95</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>wpforms-confirmation-container-full wpforms-confirmation-scroll</value>
+      <webElementGuid>e7f610f8-add8-4288-9ee7-5228a2fdf009</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>wpforms-confirmation-291</value>
+      <webElementGuid>7c1a5c0c-d9d7-443f-863a-60d6b6c94e91</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Thanks for joining our email list!
+</value>
+      <webElementGuid>b0feb714-07b3-45d9-ade4-fe380f572871</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;wpforms-confirmation-291&quot;)</value>
+      <webElementGuid>2bc453bf-64c8-4fad-9583-cdfc0cc235e1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//div[@id='wpforms-confirmation-291']</value>
+      <webElementGuid>4e0a0497-ff52-4e59-be17-587cc8688f2b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='wpforms-291']/div</value>
+      <webElementGuid>cd5e667f-f869-487d-a677-fbdd7972a58b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Newsletter'])[1]/following::div[2]</value>
+      <webElementGuid>77caaf1d-682b-46d0-ba7f-f95238ec6a40</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Add to cart'])[7]/following::div[11]</value>
+      <webElementGuid>8e6bb4aa-95b1-48d9-88cc-28f6ea33c5ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='地図&amp;アクセス方法'])[1]/preceding::div[1]</value>
+      <webElementGuid>7664bf30-391d-4288-9a37-9ecd01e6319b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='お問い合わせ'])[1]/preceding::div[4]</value>
+      <webElementGuid>fbf4fe89-1030-47c0-9ffc-fae9a857fb7d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td/div/div</value>
+      <webElementGuid>5d0adddc-0201-4d45-bcc0-5c63751c39e9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[@id = 'wpforms-confirmation-291' and (text() = 'Thanks for joining our email list!
+' or . = 'Thanks for joining our email list!
+')]</value>
+      <webElementGuid>3ffd8e51-6498-462f-8f3e-d0f94031119b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

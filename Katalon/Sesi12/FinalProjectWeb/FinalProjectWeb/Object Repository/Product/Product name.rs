@@ -15,18 +15,18 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>id(&quot;product-240&quot;)/div[@class=&quot;product_infos&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;small-12 large-5 columns&quot;]/div[@class=&quot;summary entry-summary&quot;]/h1[@class=&quot;product_title entry-title&quot;][count(. | //h1[@class = 'product_title entry-title']) = count(//h1[@class = 'product_title entry-title'])]</value>
+         <value>//*[@class = 'product_title entry-title']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>h1</value>
-      <webElementGuid>71518071-10f2-45a1-89f2-759063e87458</webElementGuid>
+      <webElementGuid>2eff257d-964e-488c-8041-45b89d7ba438</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -34,7 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>product_title entry-title</value>
-      <webElementGuid>24896cec-33d9-43f0-95ee-00a51e442cbd</webElementGuid>
+      <webElementGuid>fc0629ad-c5c0-4d8a-8aad-1416102f162f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -42,15 +42,15 @@
       <name>text</name>
       <type>Main</type>
       <value>Cap</value>
-      <webElementGuid>1a6b136a-8b64-4ab6-893d-760a9a4fbb94</webElementGuid>
+      <webElementGuid>0ca682d2-8833-4b39-95ee-9ab1efc05598</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;product-240&quot;)/div[@class=&quot;product_infos&quot;]/div[@class=&quot;row&quot;]/div[@class=&quot;small-12 large-5 columns&quot;]/div[@class=&quot;summary entry-summary&quot;]/h1[@class=&quot;product_title entry-title&quot;]</value>
-      <webElementGuid>1f1223e3-5507-4c26-90d2-0eeb911d6f44</webElementGuid>
+      <webElementGuid>b1cf0c22-4dfc-40dd-8dcc-08cecafa2de9</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -58,7 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='product-240']/div/div/div[2]/div/h1</value>
-      <webElementGuid>08b8128e-573c-414b-ba56-390b0e23b8e8</webElementGuid>
+      <webElementGuid>58e524c0-5c77-4754-9a32-2ed00e71bfa5</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -66,7 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='/'])[2]/following::h1[1]</value>
-      <webElementGuid>9fc5b2e2-ab4f-4006-bf6d-32d335f43265</webElementGuid>
+      <webElementGuid>66fdaf35-7065-4fbe-a93a-cee5f5dc11b2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Uncategorized'])[2]/following::h1[1]</value>
-      <webElementGuid>942ba81a-2137-417a-a507-7046d8dcbdfb</webElementGuid>
+      <webElementGuid>51497ea5-abf5-4e45-8272-d88153e81d0e</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp'])[6]/preceding::h1[1]</value>
-      <webElementGuid>4ed91db9-8bf4-402f-801b-2c7e6dde3ff8</webElementGuid>
+      <webElementGuid>5b205b5b-7006-4415-983b-34bdb14c53f6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Rp'])[7]/preceding::h1[1]</value>
-      <webElementGuid>43603e09-d00a-4934-ae64-62c555264921</webElementGuid>
+      <webElementGuid>af4768f7-b991-4aa4-8356-16bbff2808c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//h1</value>
-      <webElementGuid>b14718b6-35d3-482e-b8a2-45914aa17db5</webElementGuid>
+      <webElementGuid>53c89590-682d-4956-b10e-9f4886309395</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//h1[(text() = 'Cap' or . = 'Cap')]</value>
-      <webElementGuid>67c59b93-de03-40c2-b7c1-1e6e2dc212f1</webElementGuid>
+      <webElementGuid>69774053-c12d-467e-91d7-e0708082e2fa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

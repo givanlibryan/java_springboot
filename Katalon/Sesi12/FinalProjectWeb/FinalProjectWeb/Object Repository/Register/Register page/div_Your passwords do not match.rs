@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Your passwords do not match</name>
+   <tag></tag>
+   <elementGuidId>22e2e4e3-af32-424b-8dfa-2a072f3ce546</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='um_field_297_confirm_user_password']/div[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.um-field-error</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1fba627a-9d8f-4ebf-b772-8daf753a9cf4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>um-field-error</value>
+      <webElementGuid>a34287bb-3466-4beb-9717-6a49410b2716</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Your passwords do not match</value>
+      <webElementGuid>fcf6e0b1-bc58-470b-bab5-cb44894d04cb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;um_field_297_confirm_user_password&quot;)/div[@class=&quot;um-field-error&quot;]</value>
+      <webElementGuid>9f3ec035-d98c-4582-a9d1-c19b5ca564c2</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='um_field_297_confirm_user_password']/div[3]</value>
+      <webElementGuid>a03fe4be-8a32-4f30-96da-649b085fc738</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Confirm Password'])[1]/following::div[3]</value>
+      <webElementGuid>1ff6ca0a-23ab-4fc8-af51-41454401f5c4</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Password'])[1]/following::div[7]</value>
+      <webElementGuid>d55366f2-2897-46ed-a46f-6d341086649b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Address'])[1]/preceding::div[1]</value>
+      <webElementGuid>d9540715-5ce0-4e00-b26b-2589fc4d7241</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Only fill in if you are not human'])[1]/preceding::div[5]</value>
+      <webElementGuid>5bac6cd8-cc89-4a62-add5-b3cffe450cb0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Your passwords do not match']/parent::*</value>
+      <webElementGuid>e7c371ec-b00c-4d4d-9ae5-d8824943076d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/div[3]</value>
+      <webElementGuid>04356bab-5909-4aea-be74-55059fd347f2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Your passwords do not match' or . = 'Your passwords do not match')]</value>
+      <webElementGuid>dc5c1633-75d6-4164-932e-0159319d582c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
